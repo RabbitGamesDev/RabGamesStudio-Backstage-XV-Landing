@@ -98,7 +98,13 @@ a{color:inherit;text-decoration:none}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
 .slide.active{opacity:1}
 .slide.prev{opacity:0}
-.slide img{width:100%;height:100%;object-fit:cover;object-position:center top;animation:none}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:center 20%;animation:none}
+.slide:nth-child(2) img{object-position:center 15%}
+.slide:nth-child(3) img{object-position:center 10%}
+.slide:nth-child(4) img{object-position:center 25%}
+.slide:nth-child(5) img{object-position:center 18%}
+.slide:nth-child(6) img{object-position:center 12%}
+.slide:nth-child(10) img{object-position:center 22%}
 .slide.active img{animation:kenBurns 8s ease-in-out forwards}
 @keyframes kenBurns{
   0%  {transform:scale(1)    translate(0,0)}
