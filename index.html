@@ -234,21 +234,29 @@ footer img{height:38px;object-fit:contain;opacity:.75}
 .form-success p{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--white);line-height:1.7}
 .form-success span{display:block;font-family:'Cinzel',serif;font-size:.58rem;letter-spacing:.3em;color:var(--gold);margin-top:10px}
 </style>
-<!-- META PIXEL — pon tu ID en TU_PIXEL_ID -->
+<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-// fbq('init','TU_PIXEL_ID');
-// fbq('track','ViewContent');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2009864562963109');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
 </script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2009864562963109&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
 <!-- WA STICKY -->
-<a id="wa" href="https://wa.me/5212281336680?text=Hola%2C%20quiero%20que%20los%20XV%20de%20mi%20hija%20se%20sientan%20para%20siempre%20%F0%9F%A4%8D" target="_blank" rel="noopener" aria-label="WhatsApp" onclick="gtag&&gtag('event','wa_click');if(typeof fbq!=='undefined')fbq('track','Lead')">
+<a id="wa" href="https://wa.me/5212281336680?text=Hola%2C%20quiero%20que%20los%20XV%20de%20mi%20hija%20se%20sientan%20para%20siempre%20%F0%9F%A4%8D" target="_blank" rel="noopener" aria-label="WhatsApp" onclick="gtag&&gtag('event','wa_click');fbq('track','Lead')">
   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.002 2C8.268 2 2 8.268 2 16c0 2.487.658 4.82 1.806 6.83L2 30l7.362-1.78A13.944 13.944 0 0016.002 30C23.732 30 30 23.732 30 16S23.732 2 16.002 2zm0 25.6a11.567 11.567 0 01-5.912-1.62l-.424-.252-4.37 1.057 1.09-4.257-.276-.437A11.567 11.567 0 014.4 16c0-6.398 5.204-11.6 11.602-11.6S27.6 9.602 27.6 16 22.4 27.6 16.002 27.6zm6.344-8.68c-.348-.174-2.056-1.014-2.376-1.13-.318-.116-.55-.174-.78.174-.23.348-.896 1.13-1.1 1.362-.202.23-.404.26-.752.086-.348-.174-1.47-.54-2.8-1.724-1.034-.922-1.732-2.06-1.936-2.408-.202-.348-.022-.536.152-.708.156-.156.348-.404.522-.608.174-.202.232-.348.348-.578.116-.232.058-.434-.028-.608-.086-.174-.78-1.882-1.07-2.578-.28-.676-.566-.584-.78-.594l-.664-.01c-.23 0-.606.086-.922.434-.318.348-1.214 1.186-1.214 2.892s1.242 3.354 1.416 3.586c.174.23 2.444 3.73 5.92 5.232.828.358 1.472.572 1.976.732.83.264 1.586.226 2.182.138.666-.1 2.056-.84 2.346-1.652.29-.812.29-1.508.204-1.652-.086-.144-.318-.23-.666-.404z"/></svg>
 </a>
 
@@ -380,7 +388,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 <section id="victor">
   <div class="victor-video-wrap reveal-left">
     <iframe
-      src="https://www.youtube.com/embed/KsrQFfKnx60?rel=0&modestbranding=1&controls=1&color=white&playsinline=1"
+      src="https://www.youtube.com/embed/oidYps45Jjw?rel=0&modestbranding=1&controls=1&color=white&playsinline=1"
       title="Una palabra de Víctor · Backstage"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
@@ -616,7 +624,7 @@ document.querySelectorAll('.g-item').forEach(item=>{
     );
 
     // Pixel Lead event
-    if(typeof fbq !== 'undefined') fbq('track', 'Lead');
+    fbq('track','Lead');
 
     // Show success message
     document.querySelector('.form-fields').style.display = 'none';
